@@ -1,8 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    container: {
+      center: false,
+    },
+    extend: {
+      colors: {
+        clifford: '#da373d',
+        myback: '#0F172A',
+        mySecColor: '#1E293B',
+        hoverColor: '#38BDF8',
+      },
+      fontFamily: {
+        body: ['Lato', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
