@@ -5,7 +5,7 @@ import About from './pages/About';
 import Blog from './pages/blog/Blog';
 import MyServices from './pages/sections/MyServices';
 import Portfolio from './pages/portfolio/Portfolio';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
         <Route path='/' index element={<LandingPage />} />
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
-        <Route path='/services' Component={MyServices} />
         <Route path='/about' element={<About />} />
-        <Route path='/projects' element={<Portfolio />} />
       </Routes>
+      <Link to='#services' smooth></Link>
+      <Link path='#projects' smooth></Link>
     </BrowserRouter>
   );
 }

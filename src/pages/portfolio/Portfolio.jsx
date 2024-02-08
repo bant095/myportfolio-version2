@@ -21,7 +21,7 @@ const Portfolio = () => {
   };
 
   return (
-    <main>
+    <section id='#projects'>
       <h1 className='lg:mt-40 mt-10 text-center text-3xl font-bold text-white'>
         PROJECTS
       </h1>
@@ -29,7 +29,7 @@ const Portfolio = () => {
         <Categories categories={categories} filterItems={filterItems} />
         <Project items={projectItems} />
       </section>
-    </main>
+    </section>
   );
 };
 

@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaLaptopCode } from 'react-icons/fa';
-import { Route } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const MyServices = () => {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
+
   return (
-    <section className='h-fit pb-7 text-white'>
+    <section className='h-fit pb-7 text-white' id='services'>
       <h1 className='m-10 pt-10 mb-20 mt-20 text-center text-3xl font-bold'>
         MY SERVICES
       </h1>

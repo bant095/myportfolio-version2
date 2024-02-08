@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Link, Route } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const NavbarUI = () => {
   return (
@@ -8,6 +8,7 @@ const NavbarUI = () => {
         <Link
           to='/home'
           className=' hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110'
+          smooth
         >
           Home
         </Link>
@@ -15,8 +16,9 @@ const NavbarUI = () => {
 
       <li>
         <Link
-          to='/services'
+          to='#services'
           className=' hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110'
+          smooth
         >
           My Services
         </Link>
@@ -24,8 +26,9 @@ const NavbarUI = () => {
 
       <li>
         <Link
-          to='/projects'
+          to='#projects'
           className=' hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110'
+          smooth
         >
           Projects
         </Link>
