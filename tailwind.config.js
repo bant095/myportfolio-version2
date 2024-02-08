@@ -13,7 +13,7 @@ export default {
         hoverColor: '#38BDF8',
       },
       fontFamily: {
-        body: ['Lato', 'sans-serif'],
+        myFont: ['Roboto', 'sans-serif'],
       },
     },
   },
