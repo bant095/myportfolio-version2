@@ -3,7 +3,7 @@ import NavBar from '../components/navbar/NavBar';
 import Portfolio from './portfolio/Portfolio';
 import Hero from './sections/Hero';
 import MyServices from './sections/MyServices';
-import Skills from './sections/Skills';
+import Skills from './sections/skill/Skills';
 import Testimonials from './sections/testimonials/Testimonials';
 
 const LandingPage = () => {

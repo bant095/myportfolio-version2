@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashRouter as Router, Link, Route } from 'react-router-dom';
 
 const NavbarUI = () => {
   return (
