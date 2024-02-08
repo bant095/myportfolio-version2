@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className='p-5 lg:px-[100px] px-10 border-t-2 text-gray-400 border-gray-400 mt-40'>
+    <footer className='p-5 lg:px-[80px] pl-8 overflow-hidden border-t-2 text-gray-400 border-gray-400 mt-20'>
       <div className='my-5'>
         <Logo />
       </div>
@@ -31,7 +31,7 @@ const Footer = () => {
           <p className='font-light py-1'>Stay updated with my latest trends</p>
           <div className='flex'>
             <input
-              className='text-myback w-80 px-2 border-none outline-none'
+              className='text-myback lg:w-80 w-52 px-2 border-none outline-none'
               type='email'
               id='email'
               placeholder='Enter Email Address'
@@ -80,14 +80,14 @@ const Footer = () => {
       </div>
       {/* down center */}
       <div className='text-center mt-16  '>
-        <div className='relative'>
-          <div className='z-10 absolute lg:right-2 right-0 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl flex justify-center m-13 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 mr-4 transition ease-in-out  font-semibold'>
-            <Link to='/home'>
+        <div className='flex relative'>
+          <div className='z-10  absolute lg:right-2 right-0 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl flex justify-center m-8 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 transition ease-in-out'>
+            <Link to='#home' smooth>
               <FaArrowUp />
             </Link>
           </div>
         </div>
-        <p className='text-center'>Copyright © 2024 ABOLAJI ALFRED AYODEJI</p>
+        <p className='text-center'>Copyright © 2024 ABOLAJI ALFRED</p>
         <small className='font-light'>Developed By @FredSync🤩</small>
       </div>
     </footer>

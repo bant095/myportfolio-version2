@@ -6,7 +6,7 @@ const NavbarUI = () => {
     <ul className='flex flex-col lg:flex-row items-center gap-8 md:text-sm lg:text-base'>
       <li>
         <Link
-          to='/home'
+          to='#home'
           className=' hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110'
           smooth
         >
@@ -54,8 +54,9 @@ const NavbarUI = () => {
 
       <li>
         <Link
-          to='/contact'
+          to='#contact'
           className=' hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110'
+          smooth
         >
           Contact
         </Link>

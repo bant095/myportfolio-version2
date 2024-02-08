@@ -21,7 +21,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id='#projects'>
+    <section id='projects'>
       <h1 className='lg:mt-40 mt-10 text-center text-3xl font-bold text-white'>
         PROJECTS
       </h1>
