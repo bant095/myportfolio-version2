@@ -16,7 +16,6 @@ const About = () => {
 
   return (
     <section className='bg-myback'>
-      <NavBar />
       <div className='flex lg:flex-row font-myFont flex-col items-start lg:pt-40 pt-10 justify-center lg:px-20 px-5'>
         <div
           data-aos='fade-down'
@@ -89,7 +88,6 @@ const About = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

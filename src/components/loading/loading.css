@@ -1,0 +1,27 @@
+.loading-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.loading-container img {
+  width: 100px; /* Adjust image size as needed */
+  height: 100px;
+}
+
+.ping-animation {
+  animation: ping 1s ease-in-out infinite;
+}
+
+@keyframes ping {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+}

@@ -54,5 +54,35 @@ const projects = [
     img: 'https://ik.imagekit.io/gru3qfrss/box5.JPG?',
     desc: `Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.`,
   },
+
+  {
+    id: 7,
+    title: 'Savorly Foods',
+    category: 'REACT',
+    gitIcon: 'https://github.com/bant095/savorly.git',
+    liveIcon: 'https://savorly-foods.onrender.com/',
+    img: 'https://ik.imagekit.io/gru3qfrss/food%20ui%201.JPG?6',
+    desc: `Savorly is a robust food ordering platform meticulously crafted using a cutting-edge technology stack. The frontend, including user interface and experience, is powered by ReactJS, while the backend infrastructure relies on Node.js, Express.js, and MongoDB. Key functionalities encompass user authentication, cart management, secure Stripe payment integration, order tracking, and comprehensive admin dashboard capabilities. The platform is optimized for seamless user experience across various devices.  `,
+  },
+
+  {
+    id: 8,
+    title: 'Quickcart Marketplace',
+    category: 'REACT',
+    gitIcon: 'https://github.com/bant095/QuickCart-Frontend.git',
+    liveIcon: 'https://quickcartmarketplace.vercel.app/',
+    img: 'https://ik.imagekit.io/gru3qfrss/quickcart.JPG?',
+    desc: `Quickcart is an ecommerce webiste built with MERN stack. The frontend, including user interface and experience, is powered by ReactJS, while the backend infrastructure relies on Node.js, Express.js, and MongoDB. Key functionalities encompass user authentication, cart management, secure  payment integration, order tracking, and comprehensive admin dashboard capabilities.  `,
+  },
+
+  {
+    id: 9,
+    title: 'UniNova Institute',
+    category: 'REACT',
+    gitIcon: 'https://github.com/bant095/uniNova.git',
+    liveIcon: 'https://uni-nova.vercel.app/',
+    img: 'https://ik.imagekit.io/gru3qfrss/school%202.JPG?',
+    desc: `Developed as a fully responsive web application using React JS, the UniNova Institute website offers an immersive digital experience. Navigate effortlessly through our comprehensive education programs, designed to equip students with the essential knowledge and skills to thrive in today's dynamic educational landscape. `,
+  },
 ];
 export default projects;

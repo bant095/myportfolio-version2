@@ -11,6 +11,9 @@ import {
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <footer className='p-5 lg:px-[80px] pl-8 overflow-hidden border-t-2 text-gray-400 border-gray-400 mt-20'>
       <div className='my-5'>
@@ -18,8 +21,8 @@ const Footer = () => {
       </div>
       <div className='flex flex-col lg:flex-row lg:justify-between justify-center gap-[50px] lg:gap-[100px] item-center'>
         <div className='w-80'>
-          <h2 className='text-xl font-semibold'>About</h2>
-          <p className='font-light'>
+          <h2 className='text-xl font-semibold text-[20px] '>About</h2>
+          <p className='font-light text-[16px]'>
             I{`'`}m passionate Software Engineer with a strong affinity for
             problem-solving, team building, and developing innovative
             organizational products with my technical expertise.
@@ -27,8 +30,10 @@ const Footer = () => {
         </div>
         {/* Middle footer */}
         <div className='w-80 '>
-          <h2 className='font-semibold text-white'>Newsletter</h2>
-          <p className='font-light py-1'>Stay updated with my latest trends</p>
+          <h2 className='font-semibold  text-[20px]'>Newsletter</h2>
+          <p className='font-light py-1 text-[16px]'>
+            Stay updated with my latest trends
+          </p>
           <div className='flex'>
             <input
               className='text-myback lg:w-80 w-52 px-2 border-none outline-none'
@@ -43,8 +48,8 @@ const Footer = () => {
         </div>
         {/* Left footer */}
         <div className='w-80'>
-          <h3 className='font-semibold text-white'>Follow Me</h3>
-          <p className='font-light'>Let us be social</p>
+          <h3 className='font-semibold  text-[20px]'>Follow Me</h3>
+          <p className='font-light text-[16px]'>Let us be social</p>
           {/* socials */}
           <div className='flex flex-row pt-2 gap-4 text-xl'>
             <Link
@@ -81,13 +86,17 @@ const Footer = () => {
       {/* down center */}
       <div className='text-center mt-16  '>
         <div className='flex relative'>
-          <div className='z-10  absolute lg:right-2 right-0 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl flex justify-center m-8 p-6 text-center items-center bg-hoverColor w-2 h-2 rounded-3xl hover:bg-slate-400 transition ease-in-out'>
-            <Link to='#home' smooth>
-              <FaArrowUp />
-            </Link>
-          </div>
+          <button
+            className='z-10 bg-hoverColor rounded-3xl p-3 transition ease-in-out hover:bg-slate-400 absolute lg:right-2 right-0 shadow-lg shadow-blue-500/50 text-white cursor-pointer text-2xl  '
+            onClick={handleScrollToTop}
+          >
+            <FaArrowUp />
+          </button>
         </div>
-        <p className='text-center'>Copyright © 2024 ABOLAJI ALFRED</p>
+
+        <p className='text-center'>
+          &copy; {new Date().getFullYear()} ABOLAJI ALFRED A.
+        </p>
         <small className='font-light'>Developed By @FredSync🤩</small>
       </div>
     </footer>

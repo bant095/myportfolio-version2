@@ -14,8 +14,11 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className='text-white lg:px-20 px-2  font-myFont gap-7 justify-center flex flex-col-reverse lg:flex-row lg:justify-between items-center'>
-      <div className='flex flex-col lg:mt-[150px] mt-[100px] gap-8 '>
+    <section className='text-white lg:px-20 px-2  gap-7 justify-center flex flex-col-reverse lg:flex-row lg:justify-between items-center'>
+      <div
+        className='flex flex-col lg:mt-[150px] mt-[20px] gap-8 '
+        data-aos='fade-up'
+      >
         <div className='flex flex-col gap-2' data-aos='fade-up-right'>
           <h3 className='text-2xl'>Hello! I'm</h3>
           <h1 className='text-4xl font-extrabold'>ABOLAJI ALFRED</h1>
@@ -63,7 +66,7 @@ const Hero = () => {
             <FaGithub />
           </Link>
           <Link
-            to='https://api.whatsapp.com/send/?phone=2348104244450'
+            to='https://wa.me/+2348104244450'
             target='_blank '
             className='text-[40px] hover:text-hoverColor'
           >
@@ -75,12 +78,13 @@ const Hero = () => {
       {/*hero-section-right*/}
 
       <div
-        className='border-8 w-80 mt-[100px] shadow-lg shadow-blue-500/30'
+        className='relative border-8 lg:w-96 lg:h-96 w-72 h-72 lg:mt-[100px] mt-[40px] lg:mr-20px rounded-full bg-[#f3feff] shadow-lg shadow-blue-500/30 overflow-hidden'
         data-aos='fade-down'
       >
         <img
           src='https://ik.imagekit.io/gru3qfrss/ABolaji-img.png?'
           alt='abolaji-image'
+          className='object-cover w-full h-full'
         />
       </div>
     </section>

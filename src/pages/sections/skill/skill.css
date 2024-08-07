@@ -41,6 +41,67 @@
   display: inline-flex;
   flex-direction: row;
   gap: 50px;
-  font-size: 80px;
+  font-size: 73px;
   animation: 20s slide infinite linear;
+}
+
+.soft-skill {
+  display: flex;
+  flex-direction: row;
+  margin: 80px;
+}
+
+.soft-skill h3 {
+  font-size: 16px;
+  width: 180px;
+  font-weight: 600;
+  background: #38bdf8;
+  padding: 10px;
+  color: #0f172a;
+}
+
+.soft-skill-text p {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-right: 25px;
+}
+
+@media (max-width: 580px) {
+  .soft-skill {
+    margin: 20px;
+  }
+
+  .soft-skill h3 {
+    font-size: 14px;
+    width: 150px;
+    font-weight: 500;
+
+    padding: 8px;
+  }
+  .soft-skill-text p {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .soft-skill {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .soft-skill h3 {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0px;
+  }
+
+  .soft-skill-text p {
+    padding-right: 15px;
+  }
 }

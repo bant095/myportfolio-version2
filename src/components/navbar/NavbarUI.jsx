@@ -2,12 +2,16 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const NavbarUI = () => {
+  const handleHomeClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <ul className='flex flex-col lg:flex-row items-center gap-8 md:text-sm lg:text-base'>
       <li>
         <Link
-          to='#home'
-          className=' hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110'
+          to='/'
+          onClick={handleHomeClick}
+          className='hover:text-hoverColor transition duration-300 ease-in-out hover:scale-110'
           smooth
         >
           Home

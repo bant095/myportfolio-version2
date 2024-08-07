@@ -4,12 +4,21 @@ import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { HiArrowTopRightOnSquare } from 'react-icons/hi2';
 
-const Project = ({ items, id, desc }) => {
-  const [readMore, setReadMore] = useState(false);
+const Project = ({ items }) => {
+  const [readMoreStates, setReadMoreStates] = useState({}); // State to track readMore status for each project
+
+  const toggleReadMore = (id) => {
+    setReadMoreStates((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  };
+
   return (
     <div className='section-center'>
       {items.map((menuItem) => {
         const { id, title, img, desc, gitIcon, liveIcon } = menuItem;
+        const isReadMore = readMoreStates[id];
 
         return (
           <article className='project-item' key={id}>
@@ -27,12 +36,12 @@ const Project = ({ items, id, desc }) => {
                 </div>
               </header>
               <p className='item-text'>
-                {readMore ? desc : `${desc.substring(0, 100)}...`}
+                {isReadMore ? desc : `${desc.substring(0, 100)}...`}
                 <button
                   className='text-hoverColor'
-                  onClick={() => setReadMore(!readMore)}
+                  onClick={() => toggleReadMore(id)}
                 >
-                  {readMore ? 'show less' : 'read more'}
+                  {isReadMore ? 'show less' : 'read more'}
                 </button>
               </p>
             </div>

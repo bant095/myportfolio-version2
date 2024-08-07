@@ -9,9 +9,11 @@ import MobileNavBar from './MobileNavBar';
 const NavBar = () => {
   const [mobileNav, setMobileNav] = useState(false);
   return (
-    <nav className='bg-myback text-white flex justify-between items-center shadow-lg w-[100%] md:block lg:fixed z-10 lg:px-10 px-2  h-18 border-b-2 border-b-slate-700'>
+    <nav className='bg-myback text-white flex justify-between items-center shadow-lg w-[100%] md:block lg:fixed z-10 lg:px-10 px-2  h-20 border-b-2 border-b-slate-700'>
       <div className=' flex flex-row justify-between  align-center items-center py-3 px-10'>
-        <Logo />
+        <Link to='/'>
+          <Logo />
+        </Link>
 
         <div className='hidden lg:flex'>
           <NavbarUI />

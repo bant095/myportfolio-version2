@@ -3,7 +3,10 @@ import items from './data';
 import Categories from './Categories';
 import Project from './Project';
 import './index.css';
-const allCategories = ['all', ...new Set(items.map((item) => item.category))];
+const allCategories = [
+  'All Projects',
+  ...new Set(items.map((item) => item.category)),
+];
 console.log(allCategories);
 
 const Portfolio = () => {
@@ -12,7 +15,7 @@ const Portfolio = () => {
 
   // fiter items
   const filterItems = (category) => {
-    if (category === 'all') {
+    if (category === 'All Projects') {
       setProjectItems(items);
       return;
     }

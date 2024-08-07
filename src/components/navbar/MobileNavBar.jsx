@@ -20,7 +20,7 @@ const MobileNavBar = ({ mobileNav, setMobileNav }) => {
       >
         <button
           onClick={() => setMobileNav(!mobileNav)}
-          className='bg-white text-myback p-2 rounded mt-3 font-bold text-xl ml-[340px]'
+          className='bg-white text-myback p-2 rounded mt-5 font-bold text-xl ml-[260px]'
         >
           <IoMdClose />
         </button>
